@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Document</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <section>
+            <div class="container">
+            <div id="error"></div>
+              <form>          
+                <div class="step step-1 active">
+                    <label for="Name">Name</label> <span style="color:red ; font-weight:bold">*</span>
+                    <div class="form-group">            
+                        <input class="name" type="text" id="firstName" name="first-name" placeholder="First Name">
+                        <input class="name" type="text" id="lastName" name="last-name" placeholder="Last Name">
+                    </div>   
+                  <label for="date">Date of Birth</label> <span style="color:red ; font-weight:bold">*</span>          
+                    <div class="form-group">
+                        <input type="date" id="date" name="date">
+                    </div>
+                    <label for="email">Email</label> <span style="color:red ; font-weight:bold">*</span>
+                    <div class="form-group">
+                        <input type="text" id="email" name="email">
+                    </div>
+                    <label for="name">Father's Name</label> <span style="color:red ; font-weight:bold">*</span>
+                    <div class="form-group">            
+                        <input type="text" id="firstName" name="first-name" placeholder="First Name">
+                        <input type="text" id="lastName" name="last-name" placeholder="Last Name">
+                    </div> 
+                    <label for="name">Mother's Name</label> <span style="color:red ; font-weight:bold">*</span>
+                    <div class="form-group">            
+                        <input type="text" id="firstName" name="first-name" placeholder="First Name">
+                        <input type="text" id="lastName" name="last-name" placeholder="Last Name"> 
+                    </div>  
+                    <div class="gender"> Gender <span style="color:red ; font-weight:bold">*</span> <br>  
+                        <input type="radio" name="gender" value="Male">M <br>
+                        <input type="radio" name="gender" value="Female">F <br>
+                    </div>
+                    <label for="name">Nationality</label> <span style="color:red ; font-weight:bold">*</span>
+                    <div class="form-group">            
+                        <input type="text" id="Nationality" name="Nationality">                    
+                    </div>
+                    <div class="adddress">Home Address <span style="color:red ; font-weight:bold">*</span> <br>   
+                        <input type="text" id="StreetAddress" name="StreetAddress" placeholder="Street address"> <br>
+                        <input class="city" type="text" id="city" name="city" placeholder="City">
+                        <input class="country" type="text" id="country" name="country" placeholder="country">    
+						
+                    </div> <br>
+                    <label for="phone">Telephone - home</label>
+                    <div class="form-group">                        
+                        <input type="text" id="phone-number-home" name="phone-number-home">                        
+                    </div>
+                    <label for="phone">Telephone - mobile</label> <span style="color:red ; font-weight:bold">*</span>
+                    <div class="form-group">
+                        <input type="text" id="phone-number-mobile" name="phone-number-mobile">                    
+                    </div>
+                    
+                <button type="button" class="next-btn">Next</button>
+                </div>
+          
+                <div class="step step-2">
+                    <label for="name">HSC Institution name</label> <span style="color:red ; font-weight:bold">*</span>
+                    <div class="form-group">            
+                        <input type="text" id="Nationality" name="Nationality">                    
+                    </div>
+                    <label for="name">HSC Board (i.e CBSC, ICSC or State board)</label> <span style="color:red ; font-weight:bold">*</span>
+                    <div class="form-group">            
+                        <input type="text" id="Nationality" name="Nationality">                    
+                    </div>
+                    <label for="name">Score in HSC in percentage</label> <span style="color:red ; font-weight:bold">*</span>
+                    <div class="form-group">            
+                        <input type="text" id="Nationality" name="Nationality">                    
+                    </div>
+                    <label for="name">SSC Institution name</label> <span style="color:red ; font-weight:bold">*</span>
+                    <div class="form-group">            
+                        <input type="text" id="Nationality" name="Nationality">                    
+                    </div>
+                    <label for="name">SSC Board (i.e CBSC, ICSC or State board)</label> <span style="color:red ; font-weight:bold">*</span>
+                    <div class="form-group">            
+                        <input type="text" id="Nationality" name="Nationality">                    
+                    </div>
+                    <label for="name">Score in SSC in percentage</label> <span style="color:red ; font-weight:bold">*</span>
+                    <div class="form-group">            
+                        <input type="text" id="Nationality" name="Nationality">                    
+                    </div>
+                    <label for="name">Currently pursuing</label> <span style="color:red ; font-weight:bold">*</span>
+                    <div class="form-group">            
+                        <input type="text" id="Nationality" name="Nationality">                    
+                    </div>
+                    <label for="name">Current educational institution name</label> <span style="color:red ; font-weight:bold">*</span>
+                    <div class="form-group">            
+                        <input type="text" id="Nationality" name="Nationality">                    
+                    </div>
+                    <label for="name">Overall percentage</label> <span style="color:red ; font-weight:bold">*</span>
+                    <div class="form-group">            
+                        <input type="text" id="Nationality" name="Nationality">                    
+                    </div>
+                    <label for="name">Current backlogs if any</label> <span style="color:red ; font-weight:bold">*</span>
+                    <div class="form-group">            
+                        <input type="text" id="Nationality" name="Nationality">                    
+                    </div>
+                  <button type="button" class="previous-btn">Prev</button>
+                  <button type="button" class="next-btn">Next</button>
+                </div>
+          
+                <div class="step step-3">
+                    <div class="file upload"> Recent passport size photograph (image size less than 4MB) : <span style="color:red ; font-weight:bold">*</span> <br>
+                        <input type="file" id="real-file1" hidden="hidden"/>
+                        <button type="button", id="custom-button1">CHOOSE A File</button> 
+                        <span id="cusstom-text1">No file chosen, yet.</span>
+                    </div>  
+                    <div class="file upload"> Recent passport size photograph (image size less than 4MB) : <span style="color:red ; font-weight:bold">*</span> <br>
+                        <input type="file" id="real-file2" hidden="hidden"/>
+                        <button type="button", id="custom-button2">CHOOSE A File</button> 
+                        <span id="cusstom-text2">No file chosen, yet.</span>
+                    </div> 
+                    <div class="file upload"> Recent passport size photograph (image size less than 4MB) : <span style="color:red ; font-weight:bold">*</span> <br>
+                        <input type="file" id="real-file3" hidden="hidden"/>
+                        <button type="button", id="custom-button3">CHOOSE A File</button> 
+                        <span id="cusstom-text3">No file chosen, yet.</span>
+                    </div> 
+                    <div class="file upload"> Recent passport size photograph (image size less than 4MB) : <span style="color:red ; font-weight:bold">*</span> <br>
+                        <input type="file" id="real-file4" hidden="hidden"/>
+                        <button type="button", id="custom-button4">CHOOSE A File</button> 
+                        <span id="cusstom-text4">No file chosen, yet.</span>
+                    </div> 
+                    <button type="button" class="previous-btn">Prev</button>
+                    <button type="submit" class="submit-btn">Submit</button>   
+                    <span id="submit-error"></span>               
+                </div>          
+              </form>
+            </div>
+          </section>
+          <script src="main.js"></script>
+    </body>
+</html>
+
